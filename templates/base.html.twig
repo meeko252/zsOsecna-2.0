@@ -1,12 +1,37 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-    </head>
+<!doctype html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %} {{ officialName }}{% endblock %}</title>
+    {% block stylesheets %}
+        {% include 'links.html.twig' %}
+    {% endblock %}
+</head>
+{% block body %}
     <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+    {% block header %}
+        {% include 'pieces/header.html.twig' %}
+    {% endblock %}
+    <main>
+        {% block main %}
+            <div class="officialName">
+                <h1><a href="{{ path('homePage') }}">{{ officialName }}</a></h1>
+            </div>
+        {% endblock %}
+    </main>
+    <footer>
+        {% block footer %}
+            <div>
+                <strong>Rychlý kontakt</strong>
+                <p>{{ fullName }}</p>
+                <p>GSM: 737 245 227</p>
+                <p>e-mail: <a href="mailto:skola@zsosecna.cz"> skola@zsosecna.cz</a></p>
+            </div>
+        {% endblock %}
+    </footer>
     </body>
+{% endblock %}
 </html>

@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+{% block title %} {{ parent() }} | hlavní strana {% endblock %}
+{% block main %}
+    {{ parent() }}
+    <section class="mainPage_signpost_section">
+        <div class="grid">
+            <div class="primarySchool">
+                <a href=""><h3>{{ primarySchool }}</h3></a>
+            </div>
+            <div class="kinderGarden">
+                <a href=""><h3>{{ kinderGarden }}</h3></a>
+            </div>
+            <div class="schoolClub">
+                <a href=""><h3>{{ schoolClub }}</h3></a>
+            </div>
+            <div class="rentals">
+                <a href=""><h3>{{ rentals }}</h3></a>
+            </div>
+        </div>
+    </section>
+    <section class="mainPage_externalSites_section">
+        <div class="skolaOnline">
+            <h3>{{ skolaOnline }}</h3>
+            <a href="">vstoupit</a>
+        </div>
+        <div class="naseMs">
+            <h3>{{ naseMs }}</h3>
+            <a href="">vstoupit</a>
+        </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,218 @@
+$primary_color: #F1935C;
+$primary_font: 'Raleway';
+$fake-black: #222222;
+$fake-white: #f9f9f9;
+$cms_green: #b3f0a8;
+$background_color: #E6E6E6;
+$highlight: #dc3545;
+* {
+  font-family: $primary_font, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $background_color;
+}
+
+header {
+  background-color: $primary_color;
+  border-bottom: 2px solid $fake-white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  .upper_menu {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+
+    a {
+      text-decoration: none;
+      color: $fake-white;
+      margin-left: 5%;
+      margin-right: 5%;
+      font-size: 18px;
+    }
+
+    a:hover {
+      color: $highlight;
+    }
+  }
+}
+
+main {
+  .officialName {
+    background-color: $primary_color;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    h1 a {
+      text-decoration: none;
+      color: $fake-white;
+      text-transform: uppercase;
+    }
+  }
+
+  .mainPage_signpost_section {
+    .grid {
+      margin-top: 80px;
+      margin-left: 5%;
+      margin-right: 5%;
+      display: grid;
+      grid-template-columns: 25% 25% 25% 25%;
+      position: relative;
+
+      div {
+        background-color: white;
+        margin: 0 8% 5% 8%;
+        padding-bottom: 25px;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        height: 270px;
+
+        a {
+          display: inline-block;
+          align-self: flex-end;
+          text-decoration: none;
+          margin-left: 10%;
+
+          h3 {
+            font-size: 40px;
+            color: $fake-white;
+            text-transform: uppercase;
+          }
+        }
+
+        a:hover h3 {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .primarySchool {
+      background-image: url("../img/zakladniskola.jpg");
+    }
+
+    .kinderGarden {
+      background-image: url("../img/materskaskola.jpg");
+    }
+
+    .schoolClub {
+      background-image: url("../img/druzina.jpg");
+    }
+
+    .rentals {
+      background-image: url("../img/pronajmy.jpg");
+    }
+  }
+
+  .mainPage_externalSites_section {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    div {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      height: 150px;
+      width: 300px;
+
+      h3 {
+        margin-left: 5%;
+        margin-top: 10%;
+        margin-bottom: 3%;
+        font-size: 35px;
+        color: $fake-white;
+        text-transform: uppercase;
+      }
+
+      a {
+        padding: 1%;
+        text-decoration: none;
+        background-color: whitesmoke;
+        margin-left: 5%;
+        font-size: 25px;
+      }
+
+      a:hover {
+        background-color: $highlight;
+        color: $fake-white;
+      }
+    }
+
+    .skolaOnline {
+      background-color: #0ABDC8;
+
+      a {
+        color: #0ABDC8;
+      }
+    }
+
+    .naseMs {
+      background-color: #9C004C;
+
+      a {
+        color: #9C004C;
+      }
+    }
+  }
+}
+
+footer {
+  padding-top: 50px;
+  color: $fake-white;
+  height: 150px;
+  width: 100%;
+  background-color: $primary_color;
+  margin-top: 12vh;
+  position: absolute;
+
+  div {
+    margin-left: 8%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    .upper_menu a {
+      padding-top: 2%;
+      display: block;
+    }
+  }
+  main {
+    .mainPage_signpost_section {
+      .grid {
+        margin-top: 30px;
+        display: block;
+      }
+    }
+
+    .mainPage_externalSites_section {
+      display: block;
+
+      div {
+        padding-top: 10px;
+      }
+
+      .naseMs {
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  main section {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
+
+
