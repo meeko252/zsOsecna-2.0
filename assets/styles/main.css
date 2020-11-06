@@ -1,0 +1,231 @@
+* {
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #E6E6E6;
+}
+
+header {
+    background-color: #F1935C;
+    border-bottom: 2px solid #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+header .upper_menu {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+header .upper_menu a {
+    text-decoration: none;
+    color: #f9f9f9;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 18px;
+}
+
+header .upper_menu .active {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+header .upper_menu a:hover {
+    color: #dc3545;
+}
+
+main {
+    /*mainPage */
+    /* primarySchool homePage */
+}
+
+main .officialName {
+    background-color: #F1935C;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+main .officialName h1 a {
+    text-decoration: none;
+    color: #f9f9f9;
+    text-transform: uppercase;
+}
+
+main .mainPage_signpost_section .grid {
+    margin-top: 80px;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    position: relative;
+}
+
+main .mainPage_signpost_section .grid div {
+    background-color: white;
+    margin: 0 8% 5% 8%;
+    padding-bottom: 25px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    height: 270px;
+}
+
+main .mainPage_signpost_section .grid div a {
+    display: inline-block;
+    align-self: flex-end;
+    text-decoration: none;
+    margin-left: 10%;
+}
+
+main .mainPage_signpost_section .grid div a h3 {
+    font-size: 40px;
+    color: #f9f9f9;
+    text-transform: uppercase;
+}
+
+main .mainPage_signpost_section .grid div a:hover h3 {
+    text-decoration: underline;
+}
+
+main .mainPage_signpost_section .primarySchool {
+    background-image: url("../img/zakladniskola.jpg");
+}
+
+main .mainPage_signpost_section .kinderGarden {
+    background-image: url("../img/materskaskola.jpg");
+}
+
+main .mainPage_signpost_section .schoolClub {
+    background-image: url("../img/druzina.jpg");
+}
+
+main .mainPage_signpost_section .rentals {
+    background-image: url("../img/pronajmy.jpg");
+}
+
+main .mainPage_externalSites_section {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+main .mainPage_externalSites_section div {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 150px;
+    width: 300px;
+}
+
+main .mainPage_externalSites_section div h3 {
+    margin-left: 5%;
+    margin-top: 10%;
+    margin-bottom: 3%;
+    font-size: 35px;
+    color: #f9f9f9;
+    text-transform: uppercase;
+}
+
+main .mainPage_externalSites_section div a {
+    padding: 1%;
+    text-decoration: none;
+    background-color: whitesmoke;
+    margin-left: 5%;
+    font-size: 25px;
+}
+
+main .mainPage_externalSites_section div a:hover {
+    background-color: #dc3545;
+    color: #f9f9f9;
+}
+
+main .mainPage_externalSites_section .skolaOnline {
+    background-color: #0ABDC8;
+}
+
+main .mainPage_externalSites_section .skolaOnline a {
+    color: #0ABDC8;
+}
+
+main .mainPage_externalSites_section .naseMs {
+    background-color: #9C004C;
+}
+
+main .mainPage_externalSites_section .naseMs a {
+    color: #9C004C;
+}
+
+main .primarySchool_transparentBackground {
+    background-image: url("../img/primarySchool/zakladniskola.jpg");
+    height: 300px;
+    width: 100%;
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+    position: relative;
+}
+
+main .primarySchool_transparentBackground h2 {
+    color: #f9f9f9;
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-left: 5%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+footer {
+    padding-top: 50px;
+    color: #f9f9f9;
+    height: 150px;
+    width: 100%;
+    background-color: #F1935C;
+    margin-top: 12vh;
+    position: absolute;
+}
+
+footer div {
+    margin-left: 8%;
+}
+
+@media screen and (max-width: 800px) {
+    header .upper_menu a {
+        padding-top: 2%;
+        display: block;
+    }
+
+    main .mainPage_signpost_section .grid {
+        margin-top: 30px;
+        display: block;
+    }
+
+    main .mainPage_externalSites_section {
+        display: block;
+    }
+
+    main .mainPage_externalSites_section div {
+        padding-top: 10px;
+    }
+
+    main .mainPage_externalSites_section .naseMs {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    main section {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+
+/*# sourceMappingURL=main.css.map */

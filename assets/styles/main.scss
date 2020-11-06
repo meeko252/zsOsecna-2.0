@@ -1,3 +1,4 @@
+
 $primary_color: #F1935C;
 $primary_font: 'Raleway';
 $fake-black: #222222;
@@ -36,6 +37,11 @@ header {
       font-size: 18px;
     }
 
+    .active {
+      color: $highlight;
+      font-weight: bold;
+    }
+
     a:hover {
       color: $highlight;
     }
@@ -43,6 +49,7 @@ header {
 }
 
 main {
+  /*mainPage */
   .officialName {
     background-color: $primary_color;
     width: 100%;
@@ -160,6 +167,27 @@ main {
       a {
         color: #9C004C;
       }
+    }
+  }
+
+  /* primarySchool homePage */
+  .primarySchool_transparentBackground {
+    background-image: url("../img/primarySchool/zakladniskola.jpg");
+    height: 300px;
+    width: 100%;
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+    position: relative;
+
+    h2 {
+      color: $fake-white;
+      font-size: 50px;
+      text-transform: uppercase;
+      margin-left: 5%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
     }
   }
 }
