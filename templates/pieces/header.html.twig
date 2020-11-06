@@ -1,8 +1,8 @@
 <header>
     <nav class="upper_menu">
-        <a href="">{{ primarySchool }}</a>
-        <a href="">{{ kinderGarden }}</a>
-        <a href="">{{ schoolClub }}</a>
-        <a href="">{{ rentals }}</a>
+        <a href="{{ path('primarySchool_homePage') }}" {% if category == "zs" %} class="active" {% endif %}>{{ primarySchool }}</a>
+        <a href="" {% if category == "ms" %}class="active" {% endif %}>{{ kinderGarden }}</a>
+        <a href="" {% if category == "dr" %}class="active" {% endif %}>{{ schoolClub }}</a>
+        <a href="" {% if category == "pr" %}class="active" {% endif %}>{{ rentals }}</a>
     </nav>
 </header>
