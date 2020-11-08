@@ -23,9 +23,8 @@ header {
   align-items: center;
   justify-content: center;
   width: 100%;
-
   .upper_menu {
-    padding: 10px;
+    padding: 5px;
     width: 100%;
     text-align: center;
 
@@ -34,7 +33,7 @@ header {
       color: $fake-white;
       margin-left: 5%;
       margin-right: 5%;
-      font-size: 18px;
+      font-size: 15px;
     }
 
     .active {
@@ -54,8 +53,9 @@ main {
     background-color: $primary_color;
     width: 100%;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    size: 23px;
 
     h1 a {
       text-decoration: none;
@@ -182,7 +182,7 @@ main {
 
     h2 {
       color: $fake-white;
-      font-size: 50px;
+      font-size: 40px;
       text-transform: uppercase;
       margin-left: 5%;
       position: absolute;
