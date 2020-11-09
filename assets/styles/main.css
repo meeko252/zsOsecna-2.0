@@ -175,30 +175,38 @@ footer div {
   header .upper_menu a {
     padding-top: 2%;
     display: block;
+    font-size: 18px;
   }
 
-  main .mainPage_signpost_section .grid {
-    margin-top: 30px;
-    display: block;
+  main .mainPage_signpost_section .grid div {
+    margin-left: 1%;
+    margin-right: 1%;
   }
-
   main .mainPage_externalSites_section {
     display: block;
   }
-
   main .mainPage_externalSites_section div {
     padding-top: 10px;
   }
-
   main .mainPage_externalSites_section .naseMs {
     margin-top: 30px;
   }
 }
-
+@media screen and (max-width: 1377px) {
+  main .mainPage_signpost_section .grid {
+    margin-top: 30px;
+    display: block;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
 @media screen and (min-width: 1920px) {
   main section {
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  main .mainPage_signpost_section .grid div {
+    margin: 0 5% 5% 5%;
   }
 }
 
