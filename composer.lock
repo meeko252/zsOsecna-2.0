@@ -15,16 +15,16 @@
         "reference": "c8c9aa8a14cc3d3bec86d0a8c3fa52ea79936855"
       },
       "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/composer/package-versions-deprecated/zipball/c8c9aa8a14cc3d3bec86d0a8c3fa52ea79936855",
-                "reference": "c8c9aa8a14cc3d3bec86d0a8c3fa52ea79936855",
-                "shasum": ""
-            },
-            "require": {
-                "composer-plugin-api": "^1.1.0 || ^2.0",
-                "php": "^7 || ^8"
-            },
-            "replace": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/composer/package-versions-deprecated/zipball/c8c9aa8a14cc3d3bec86d0a8c3fa52ea79936855",
+        "reference": "c8c9aa8a14cc3d3bec86d0a8c3fa52ea79936855",
+        "shasum": ""
+      },
+      "require": {
+        "composer-plugin-api": "^1.1.0 || ^2.0",
+        "php": "^7 || ^8"
+      },
+      "replace": {
                 "ocramius/package-versions": "1.11.99"
             },
             "require-dev": {
@@ -1372,17 +1372,18 @@
                     "email": "schmittjoh@gmail.com"
                 },
                 {
-                    "name": "Marco Pivetta",
-                    "email": "ocramius@gmail.com"
+                  "name": "Marco Pivetta",
+                  "email": "ocramius@gmail.com"
                 }
             ],
-            "description": "The Doctrine Reflection project is a simple library used by the various Doctrine projects which adds some additional functionality on top of the reflection functionality that comes with PHP. It allows you to get the reflection information about classes, methods and properties statically.",
-            "homepage": "https://www.doctrine-project.org/projects/reflection.html",
-            "keywords": [
-                "reflection",
-                "static"
-            ],
-            "time": "2020-03-27T11:06:43+00:00"
+          "description": "The Doctrine Reflection project is a simple library used by the various Doctrine projects which adds some additional functionality on top of the reflection functionality that comes with PHP. It allows you to get the reflection information about classes, methods and properties statically.",
+          "homepage": "https://www.doctrine-project.org/projects/reflection.html",
+          "keywords": [
+            "reflection",
+            "static"
+          ],
+          "abandoned": "roave/better-reflection",
+          "time": "2020-03-27T11:06:43+00:00"
         },
         {
             "name": "doctrine/sql-formatter",
@@ -5585,20 +5586,20 @@
             ],
             "time": "2020-10-02T13:05:43+00:00"
         },
-        {
-            "name": "symfony/security-bundle",
-            "version": "v5.1.7",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/security-bundle.git",
-                "reference": "c9cbe7d78d734062365e2af6d8d475d8888a7bcc"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/security-bundle/zipball/c9cbe7d78d734062365e2af6d8d475d8888a7bcc",
-                "reference": "c9cbe7d78d734062365e2af6d8d475d8888a7bcc",
-                "shasum": ""
-            },
+    {
+      "name": "symfony/security-bundle",
+      "version": "v5.1.8",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/symfony/security-bundle.git",
+        "reference": "8921cdb1057f615b8340a352195f4a684c876893"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/symfony/security-bundle/zipball/8921cdb1057f615b8340a352195f4a684c876893",
+        "reference": "8921cdb1057f615b8340a352195f4a684c876893",
+        "shasum": ""
+      },
             "require": {
                 "ext-xml": "*",
                 "php": ">=7.2.5",
@@ -5639,11 +5640,6 @@
                 "twig/twig": "^2.10|^3.0"
             },
             "type": "symfony-bundle",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "5.1-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Symfony\\Bundle\\SecurityBundle\\": ""
@@ -5682,7 +5678,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-09-20T07:33:50+00:00"
+      "time": "2020-10-24T12:01:57+00:00"
         },
         {
             "name": "symfony/security-core",
@@ -7041,14 +7037,14 @@
                 "push"
             ],
             "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                  "type": "github"
-                },
+              {
+                "url": "https://symfony.com/sponsor",
+                "type": "custom"
+              },
+              {
+                "url": "https://github.com/fabpot",
+                "type": "github"
+              },
               {
                 "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
                 "type": "tidelift"
@@ -7120,16 +7116,16 @@
       "dist": {
         "type": "zip",
         "url": "https://api.github.com/repos/symfony/yaml/zipball/e147a68cb66a8b510f4b7481fe4da5b2ab65ec6a",
-                "reference": "e147a68cb66a8b510f4b7481fe4da5b2ab65ec6a",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.2.5",
-                "symfony/deprecation-contracts": "^2.1",
-                "symfony/polyfill-ctype": "~1.8"
-            },
-            "conflict": {
-                "symfony/console": "<4.4"
+        "reference": "e147a68cb66a8b510f4b7481fe4da5b2ab65ec6a",
+        "shasum": ""
+      },
+      "require": {
+        "php": ">=7.2.5",
+        "symfony/deprecation-contracts": "^2.1",
+        "symfony/polyfill-ctype": "~1.8"
+      },
+      "conflict": {
+        "symfony/console": "<4.4"
             },
             "require-dev": {
                 "symfony/console": "^4.4|^5.0"
